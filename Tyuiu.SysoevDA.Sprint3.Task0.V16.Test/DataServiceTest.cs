@@ -9,11 +9,10 @@ namespace Tyuiu.SysoevDA.Sprint3.Task0.V16.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetSumSeries()
+        public void ValidGetMultiplySeries()
         {
             DataService ds = new DataService();
-            double value = 11;
-            Assert.AreEqual(63601470092869632000000.0, ds.GetSumSeries(value));
+            Assert.AreEqual(63601470092869632000000.0, ds.GetMultiplySeries(1, 11));
         }
     }
 }

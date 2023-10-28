@@ -29,6 +29,9 @@ namespace Tyuiu.SysoevDA.Sprint3.Task0.V16
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
+            Console.WriteLine("Начало шага = 1");
+            Console.WriteLine("Конец шага = 11");
+
             Console.WriteLine("    11   1   -3");
             Console.WriteLine("p = П ( --- )");
             Console.WriteLine("   k=1   k   ");
@@ -38,7 +41,7 @@ namespace Tyuiu.SysoevDA.Sprint3.Task0.V16
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine($"p = {ds.GetSumSeries(11)}");
+            Console.WriteLine($"p = {ds.GetMultiplySeries(1,11)}");
 
             Console.ReadKey();
         }

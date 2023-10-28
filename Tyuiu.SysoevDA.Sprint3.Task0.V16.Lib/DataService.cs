@@ -10,14 +10,14 @@ namespace Tyuiu.SysoevDA.Sprint3.Task0.V16.Lib
 {
     public class DataService : ISprint3Task0V16
     {
-        public double GetSumSeries(double value)
+        public double GetMultiplySeries(int startValue, int stopValue)
         {
             double res = 1;
-            for (int k = 1; k < value + 1; k++)
+            for (int k = startValue; k <= stopValue; k++)
             {
                 res = res * (k * k * k);
             }
-            return res;
+            return Math.Round(res,3);
         }
     }
 }
